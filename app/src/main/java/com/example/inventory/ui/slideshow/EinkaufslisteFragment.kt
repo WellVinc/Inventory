@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.inventory.databinding.FragmentSlideshowBinding
 
-class SlideshowFragment : Fragment() {
+class EinkaufslisteFragment : Fragment() {
 
     private var _binding: FragmentSlideshowBinding? = null
 
@@ -23,7 +23,7 @@ class SlideshowFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+            ViewModelProvider(this).get(EinkaufslisteViewModel::class.java)
 
         _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
         val root: View = binding.root
